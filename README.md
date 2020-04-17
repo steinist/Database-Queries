@@ -5,18 +5,20 @@ Resource: [COMP2012 Assignment 1 Page] (https://course.cse.ust.hk/comp2012/assig
 
 ### Introduction
 
-Suppose we are given a table of courses that are offered in Spring Semester of 2020. You can find eight courses, each of them are represented as an entry in the table. There are four attributes in the table, Department, Course Code, Course Name and Credits. An attribute characterizes information about entries.
+Suppose we are given a table of courses that are offered in Spring Semester of 2020. You can find eight courses, each of them are represented as an **entry** in the table. There are four **attributes** in the table, Department, Course Code, Course Name and Credits. An attribute characterizes information about entries.
 
-Department	Course Code	Course Name	Credits
-CSE	COMP2012	Object-Oriented Programming and Data Structures	4
-CSE	COMP3021	Java Programming	3
-CSE	COMP3711	Design and Analysis of Algorithms	3
-CSE	COMP4511	System and Kernel Programming in Linux	3
-CSE	COMP4641	Social Information Network Analysis and Engineering	3
-MATH	MATH2343	Discrete Structures	4
-MATH	MATH3033	Real Analysis	4
-MATH	MATH4023	Complex Analysis	3
+|Department	|Course Code	|Course Name	|Credits|
+|-----------|-------------|-------------|-------|
+|CSE	|COMP2012	|Object-Oriented Programming and Data Structures	|4
+|CSE	|COMP3021	|Java Programming	|3
+|CSE	|COMP3711	|Design and Analysis of Algorithms	|3
+|CSE	|COMP4511	|System and Kernel Programming in Linux	|3
+|CSE	|COMP4641	|Social Information Network Analysis and Engineering	|3
+|MATH	|MATH2343	|Discrete Structures	|4
+|MATH	|MATH3033	|Real Analysis	|4
+|MATH	|MATH4023	|Complex Analysis	|3
 Table 1 - courses
+
 Now we are asked to get the top 3 courses that are offered by CSE, ranked in descending order with their credits, then in ascending order with their name. This can be done by a SQL query:
 
 SELECT * FROM courses
