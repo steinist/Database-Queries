@@ -1,7 +1,7 @@
 # Database-Queries using C++
 ## HKUST Fall2020 - COMP2012 : Object-Oriented Programming and Data Structure
 ## Assignment1
-Resource: [COMP2012 Assignment 1 Page] (https://course.cse.ust.hk/comp2012/assignments/assignment1/)
+Resource: [COMP2012 Assignment 1 Page](https://course.cse.ust.hk/comp2012/assignments/assignment1/)
 
 ### Introduction
 
