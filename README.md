@@ -17,28 +17,43 @@ Suppose we are given a table of courses that are offered in Spring Semester of 2
 |MATH	|MATH2343	|Discrete Structures	|4
 |MATH	|MATH3033	|Real Analysis	|4
 |MATH	|MATH4023	|Complex Analysis	|3
+
 Table 1 - courses
 
 Now we are asked to get the top 3 courses that are offered by CSE, ranked in descending order with their credits, then in ascending order with their name. This can be done by a SQL query:
 
+```
 SELECT * FROM courses
 WHERE Department = 'CSE'
 ORDER BY Credits DESC, `Course Name` ASC
 LIMIT 3;
+```
+
 But we are taking a C++ course, aren't we? How about writing the query using the syntaxes of C++? Imagine we can translate the above SQL query into a C++ statement:
 
+```
 courses.query()
 .where("Department", EQ, "CSE")
 .orderBy("Course Name", ASCENDING)
 .orderBy("Credits", DESCENDING)
 .limit(3)
 .select();
+```
+
 Looks very readable, isn't it? Your tasks in this programming assignment is to implement classes to support database queries in C++.
 
-For those who are unfamiliar with SQL, here is a brief introduction to the SQL statements and clauses which are mimicked in this programming assignment. Click here for a full introduction to SQL.
+For those who are unfamiliar with SQL, here is a brief introduction to the SQL statements and clauses which are mimicked in this programming assignment.
 
-SELECT statement retrieves information from a table in a database. Columns need to be specified explicity by a list of their names, or use * to denote all columns. In this programming assignment, the result of SELECT is printed out in a formatted way.
-UPDATE statement modifies rows of a table in a database.
-WHERE clause provides a condition such that SELECT and UPDATE statements return or update rows that satisfy the condition.
-ORDER BY clause orders the result of SELECT statements according to the values of columns, in ascending or descending order.
-LIMIT clause limits the result of SELECT and UPDATE statements. (MySQL only)
+`SELECT` statement retrieves information from a table in a database. Columns need to be specified explicity by a list of their names, or use * to denote all columns. In this programming assignment, the result of SELECT is printed out in a formatted way.
+`UPDATE` statement modifies rows of a table in a database.
+`WHERE` clause provides a condition such that SELECT and UPDATE statements return or update rows that satisfy the condition.
+`ORDER BY` clause orders the result of SELECT statements according to the values of columns, in ascending or descending order.
+`LIMIT` clause limits the result of SELECT and UPDATE statements. (MySQL only)
+
+
+### Task:
+It is required to impplement two classes, `class Table` and `class Intermediate`. The implementations is written in `table.cpp` and `intermediate.cpp` respectively.
+
+This programming assignment aims to introduce the notion of classes and reinforce the concepts of pointer manipulation and dynamic memory management. In particular, you will be manipulating the following data structures:
+- Dynamically allocated 2D array
+- Doubly linked list
