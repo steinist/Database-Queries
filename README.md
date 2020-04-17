@@ -57,3 +57,8 @@ It is required to impplement two classes, `class Table` and `class Intermediate`
 This programming assignment aims to introduce the notion of classes and reinforce the concepts of pointer manipulation and dynamic memory management. In particular, you will be manipulating the following data structures:
 - Dynamically allocated 2D array
 - Doubly linked list
+
+
+### Task Achievement
+Score: 93/100
+Instructor: TSOI, Yau Chat (Desmond)
